@@ -1,14 +1,38 @@
-# Виртуальные окружения
-.venv/
-venv/
-
-# Временные файлы Python
+# Python: bytecode and cache
 __pycache__/
 *.py[cod]
+*$py.class
 
-# Временные файлы Jupyter
+# Virtual environments (shared by all labs)
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Системные файлы
+# Local datasets and personal test images
+lab3/data/
+lab3/test_images/
+
+# Trained model weights and checkpoints
+lab3/models/*.pth
+lab3/models/*.pt
+lab3/models/*.ckpt
+
+# Generated tracking videos (keep result images)
+lab2/results/*_tracking.avi
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Operating system files
 .DS_Store
 Thumbs.db
+desktop.ini
